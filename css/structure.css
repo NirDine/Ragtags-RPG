@@ -466,7 +466,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 1em;
     position: relative
 }
 
@@ -525,7 +525,43 @@ main {
 }
 
 
+#download {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 5em;
+    gap: 2em;
 
+}
+
+.dwn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+    justify-content: space-between;
+}
+.download-box-right,
+.download-box-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+}
+.download-box-right {
+    justify-content: flex-start;
+}
+
+.download-box-left {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.download-link {
+       padding: 0.5em 2em;
+}
 
 
 
@@ -611,7 +647,9 @@ footer .copyright {
 .avatar {
     border-radius: 100%;
     width: 9em;
+    border: 3px solid var(--primary50);
 }
+
 
 
 
