@@ -626,22 +626,23 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 1em;
-    gap: 0.22em;
+    padding-bottom: 0.5em;
+
 
 }
 
 .logo 
 {  
-    height: 2.5em;
-    width: 8em;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('/img/logos/logo.svg');
-    margin-bottom: 0.5em;
     margin: 0 auto;
+    margin-bottom: -0.5em;
 
 }
+
+.logo img {
+        pointer-events: none;
+
+}
+
 
 .avatar {
     border-radius: 100%;
