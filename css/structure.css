@@ -229,10 +229,9 @@ main {
 
 .hero-cta {
     display: flex;
-    flex-direction: row-reverse;
     gap: 1em;
     flex-wrap: wrap;
-    justify-content: flex-end
+    justify-content: flex-start
 }
 
 .hero-scroll {
@@ -445,10 +444,6 @@ main {
     line-height: 1
 }
 
-.info-box.get-suggestions {
-    background-color: #f1f1f1
-}
-
 
 .faq-section {
     display: flex;
@@ -563,6 +558,10 @@ main {
 
 }
 
+.older-versions-link {
+    text-align: right;
+ 
+}
 
 
 .footer {
@@ -678,14 +677,18 @@ footer .copyright {
         margin: auto;
     }
 
-    .section-cards {
+    .cardHolder {
+        display: flex;
         flex-direction: column;
+         align-items: center !important;
         gap: 2em;
+
+        
     }
 
-
-    .section-card {
+    .card {
         width: 100%;
+
     }
 
 
@@ -695,152 +698,8 @@ footer .copyright {
     }
 
 
-    .primary-button,
-    .secondary-button {
-        text-align: center;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column !important;
-        height: 100%;
-        align-items: flex-start;
-        gap: 0.5em;
-        width: 100%;
-        justify-content: flex-start;
-        height: 100vh;
-    }
-
-    .menu :nth-child(4) {
-        display: none;
-    }
-
-    .menu-item-mobile {
-        background-color: var(--static10);
-        padding: 1.5em !important;
-        width: 100%;
-    }
-
-    .menu.hide {
-        display: none;
-    }
-
-
-    .ham-menu {
-        display: flex;
-        padding: 0.9em 0.5em;
-        align-items: center;
-        height: 100%;
-    }
-
-
-    .get-suggestions-toolbar {
-        flex-direction: row;
-        align-self: center;
-    }
-
-    .main-block {
-        height: 150px !important;
-    }
-
-    .color-block {
-        height: 150px !important;
-    }
-
-    .row {
-        width: 100% !important;
-    }
-
-
-    .disabled {
-        background: var(--static) !important;
-        opacity: 1;
-        color: var(--static2) !important;
-    }
-
-    .disabled>svg {
-        opacity: 20%;
-    }
-
-
-    .content-list {
-        flex-direction: column !important;
-    }
-
-    .col1,
-    .col2,
-    .col3 {
-        width: 100% !important;
-    }
-
     main {
         overflow: visible !important;
-    }
-
-    .main-content {
-        overflow-y: inherit !important;
-        width: 100% !important;
-        padding-right: 0 !important;
-    }
-
-    .popup {
-        max-width: 90%;
-        z-index: 10002 !important;
-        padding: 10px !important;
-    }
-
-
-    #overlay,
-    #font-overlay {
-        z-index: 10001 !important;
-    }
-
-
-    .tabList {
-        overflow-x: scroll;
-    }
-
-
-    .tab {
-        white-space: nowrap;
-    }
-
-    .font-tab {
-        white-space: nowrap;
-    }
-
-    .custom-code-block-cont {
-        flex-direction: column;
-    }
-
-    .code-block-cont {
-        flex-direction: column;
-    }
-
-    .wrapper {
-        display: none;
-    }
-
-    pre {
-        max-height: 10rem;
-    }
-
-    .content-list-scroll {
-        width: 100%;
-        background-color: var(--bg);
-        left: 0;
-        top: 0;
-        height: 100%;
-        padding: 8rem 1rem;
-        z-index: 9999;
-    }
-
-    .main-content {
-        width: 100% !important;
-    }
-
-    #custom-output {
-        max-height: 8rem;
     }
 
 }
@@ -868,15 +727,12 @@ footer .copyright {
     }
 
     .hero-img {
-        width: 90%
+        display: none;
+
     }
 
     .hero-img-left {
         display: none
-    }
-
-    .mondrian {
-        height: auto
     }
 
     .hero {
@@ -885,13 +741,10 @@ footer .copyright {
         gap: 2em
     }
 
-    .logoface {
-        width: 30px
+    .searchInput {
+        width: 50%;
     }
 
-    .hero-cta {
-        flex-direction: column
-    }
 
     .how {
         flex-direction: column;
@@ -922,6 +775,11 @@ footer .copyright {
     .faq-list, .step{
         width: 100%;
     }
+    
+    
+    .stick-figure-samurai {
+        display: none;
+    }
 
 
     .part-heading.left {
@@ -931,6 +789,38 @@ footer .copyright {
 
     .how {
         gap: 2rem
+    }
+    
+    #download {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2em 4em;
+
+    }
+    
+    .dwn-wrapper {
+      flex-direction: column;
+      gap: 1em;
+    }
+    
+    .download-box-right {
+        
+    }
+    
+    .download-box-left {
+        display: 
+    }
+    
+    #download .log-wrapper  {
+        width: 200%;
+    }
+    
+    .older-versions-link {
+        text-align: center;
+        width: 200%;
     }
 }
 
