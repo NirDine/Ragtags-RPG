@@ -342,6 +342,8 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 1rem;
 }
+
+
 .card {
     width: 100%;
     display: flex;
@@ -816,7 +818,7 @@ footer .copyright {
     }
     
     #download .log-wrapper  {
-        width: 200%;
+        width: 100%;
     }
     
     .older-versions-link {
